@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>LITE CRAFT</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+      
+
+  .filters {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+  }
+
+  .filter {
+    width: 45%;
+  }
+
+  .card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 20px;
+  }
+
+  .location-card {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 30px black;
+    border-radius: 25px;
+    padding: 10px;
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .location-card:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+  .location-card:hover {
+    background-image: linear-gradient(to right,#28a745,#edefec,#28a745);
+  }
+  .checked {
+  color: orange;
+}
+
+
+.button {   background-image: linear-gradient(to right,#28a745,#edefec,#28a745);
+        border-radius: 10px;
+           font-size: 18px;/* Green */  border: none;
+             color: black;  padding: 15px 32px; 
+              text-align: center;  text-decoration: none;  
+              display: inline-block;  margin: 4px 2px;  cursor: pointer;}
+
+    </style>
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-light pt-3 d-none d-lg-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
+                    <div class="d-inline-flex align-items-center">
+                        <p><i class="fa fa-envelope mr-2"></i>litecraft@gmail.com</p>
+                        <p class="text-body px-3">|</p>
+                        <p><i class="fa fa-phone-alt mr-2"></i></p>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center text-lg-right">
+                    <div class="d-inline-flex align-items-center">
+                        <a class="text-primary px-3" href="">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="text-primary px-3" href="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="text-primary px-3" href="">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a class="text-primary px-3" href="">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="text-primary pl-3" href="">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative nav-bar p-0">
+        <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
+            <nav class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5">
+                <a href="" class="navbar-brand">
+                    <h1 class="m-0 text-primary"><span class="text-dark">LITE</span>CRAFT</h1>
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto py-0">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link active">Filter Facilities</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu border-0 rounded-0 m-0">
+                                <a href="blog.html" class="dropdown-item">Facilities details</a>
+                                <a href="single.html" class="dropdown-item">Exploring places</a>
+                            
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Header Start -->
+    <div class="container-fluid page-header">
+        <div class="container">
+            <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
+                <h3 class="display-4 text-white text-uppercase">FILTER FACILITIES</h3>
+                <div class="d-inline-flex text-white">
+                    <p class="m-0 text-uppercase"><a class="text-white" href="">Home</a></p>
+                    <i class="fa fa-angle-double-right pt-1 px-3"></i>
+                    <p class="m-0 text-uppercase">FILTER FACILITIES</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+  <! --FACILITIES -->
+  <body>
+   
+    <center><button class="button" ><h1><center>COIMBATORE</center></h1></button>
+    <div class="filters">
+      <div class="filter">
+        <label for="primary-filter">Select a category:</label>
+        <select id="primary-filter">
+          <option value="all">All</option>
+          <option value="restaurant">Restaurant</option>
+          <option value="hospital">Hospital</option>
+          <option value="public-place">Public Place</option>
+          <option value="entertainment">Entertainment</option>
+        </select>
+      </div>
+    
+      <div class="filter">
+        <label>Accessibility options:</label>
+        <div>
+          <input type="checkbox" id="wheelchair" value="wheelchair">
+          <label for="wheelchair">Wheelchair</label>
+          <input type="checkbox" id="elevator" value="elevator">
+          <label for="elevator">Elevator</label>
+          <input type="checkbox" id="restroom" value="restroom">
+          <label for="restroom">Restroom</label>
+          <input type="checkbox" id="parking" value="parking">
+          <label for="parking">Parking</label>
+        </div>
+      </div>
+    </div>
+    
+    <div class="card-grid">
+      <div class="location-card" data-category="restaurant" data-accessibility="wheelchair parking restroom">
+        <center><h3>DINDIGUL THALAPAKATTI RESTAURANT</h3></center>
+        <center><h2>Star Rating</h2>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span></center>
+    <center><img src="thalapakatti.jpg" height="200" width="300"></center>
+    <center><a href="dindifaci.html">POST YOUR REVIEWS HERE</a></center>
+    <center><a href="#">CLICK HERE FOR A VIEW</a></center>
+      </div>
+    
+         <div class="location-card" data-category="hospital" data-accessibility="elevator restroom wheelchair parking">
+        <center><h3>GANGA HOSPITAL</h3></center>
+         <center><h2>Star Rating</h2>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span></center>
+    <center><img src="ganga.jpg" height="200" width="300"></center>
+    <center><a href="ganga.html">POST YOUR REVIEWS HERE</a></center>
+    <center><a href="gangapan.html">CLICK HERE FOR A VIEW</a></center>
+      </div>
+    
+      <div class="location-card" data-category="entertainment" data-accessibility="parking elevator wheelchair restroom">
+        <center><h3>BROOK FIELDS</h3></center>
+        <center><h2>Star Rating</h2>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span></center>
+    <center><img src="brooks.jpg" height="200" width="300"></center>
+    <center><a href="brooksfield.html">POST YOUR REVIEWS HERE</a></center>
+    <center><a href="brookpan.html">CLICK HERE FOR A VIEW</a></center> 
+      </div>
+    
+      <div class="location-card" data-category="public-place" data-accessibility="parking restroom wheelchair">
+        <center><h3>COLLECTOR OFFICE</h3></center>
+        <center><h2>Star Rating</h2>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span></center>
+    <center><img src="collector.jpg" height="200" width="300"></center>
+    <center><a href="collector.html">POST YOUR REVIEWS HERE</a></center>
+    <center><a href="collectorpan.html">CLICK HERE FOR A VIEW</a></center> 
+      </div>
+    
+      <div class="location-card" data-category="entertainment" data-accessibility="parking restroom wheelchair">
+        <center><h3>VOC PARK</h3></center>
+        <center><h2>Star Rating</h2>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span></center>
+    <center><img src="voc.jpg" height="200" width="300"></center>
+    <center><a href="voc.html">POST YOUR REVIEWS HERE</a></center>
+    <center><a href="#">CLICK HERE FOR A VIEW</a></center> 
+      </div>
+    
+      <div class="location-card" data-category="public-place" data-accessibility="parking restroom wheelchair">
+        <center><h3>TAHSILDAR OFFICE</h3></center>
+        <center><h2>Star Rating</h2>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span></center>
+    <center><img src="taluk.jpg" height="200" width="300"></center>
+    <center><a href="vao.html">POST YOUR REVIEWS HERE</a></center>
+    <center><a href="#">CLICK HERE FOR A VIEW</a></center> 
+      </div>
+    
+      <div class="location-card" data-category="hospital" data-accessibility="parking restroom wheelchair elevator">
+        <center><h3>KMCH HOSPITAL</h3></center>
+        <center><h2>Star Rating</h2>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span></center>
+    <center><img src="kmch.jpg" height="200" width="300"></center>
+    <center><a href="kmch.html">POST YOUR REVIEWS HERE</a></center>
+    <center><a href="#">CLICK HERE FOR A VIEW</a></center> 
+      </div>
+    
+      <div class="location-card" data-category="restaurant" data-accessibility="parking restroom wheelchair">
+        <center><h3>AB's</h3></center>
+        <center><h2>Star Rating</h2>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span></center>
+    <center><img src="abs.jpg" height="200" width="300"></center>
+    <center><a href="AB.html">POST YOUR REVIEWS HERE</a></center>
+    <center><a href="#">CLICK HERE FOR A VIEW</a></center> 
+      </div>
+    
+    
+      <div class="location-card" data-category="public-place" data-accessibility="parking restroom">
+        <center><h3>RTO OFFICE</h3></center>
+        <center><h2>Star Rating</h2>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span></center>
+    <center><img src="rto.jpg" height="200" width="300"></center>
+    <center><a href="rto.html">POST YOUR REVIEWS HERE</a></center>
+    <center><a href="#">CLICK HERE FOR A VIEW</a></center> 
+      </div>
+      
+      <div class="location-card" data-category="restaurant" data-accessibility="parking restroom">
+        <center><h3>SRI VELAN CHETTINADU MESS</h3></center>
+        <center><h2>Star Rating</h2>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span></center>
+    <center><img src="seri velan.jpg" height="200" width="300"></center>
+    <center><a href="srivelan.html">POST YOUR REVIEWS HERE</a></center>
+    <center><a href="#">CLICK HERE FOR A VIEW</a></center> 
+      </div>
+    
+      <div class="location-card" data-category="hospital" data-accessibility="parking restroom wheelchair elevator">
+        <center><h3>PSG HOSPITALS</h3></center>
+        <center><h2>Star Rating</h2>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span></center>
+    <center><img src="psg.jpg" height="200" width="300"></center>
+    <center><a href="psg.html">POST YOUR REVIEWS HERE</a></center>
+    <center><a href="#">CLICK HERE FOR A VIEW</a></center> 
+      </div>
+    
+      <div class="location-card" data-category="entertainment" data-accessibility="parking restroom">
+        <center><h3>RACE COURSE</h3></center>
+        <center><h2>Star Rating</h2>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span></center>
+    <center><img src="race.jpg" height="200" width="300"></center>
+    <center><a href="racecourse.html">POST YOUR REVIEWS HERE</a></center>
+    <center><a href="#">CLICK HERE FOR A VIEW</a></center> 
+      </div>
+    </div>
+    
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const primaryFilter = document.getElementById('primary-filter');
+        const accessibilityCheckboxes = document.querySelectorAll('input[type="checkbox"]');
+        const locationCards = document.querySelectorAll('.location-card');
+    
+        // Add change event listeners to filters
+        primaryFilter.addEventListener('change', filterLocations);
+        accessibilityCheckboxes.forEach(checkbox => checkbox.addEventListener('change', filterLocations));
+    
+        function filterLocations() {
+          const selectedCategory = primaryFilter.value;
+          const selectedAccessibility = Array.from(accessibilityCheckboxes)
+            .filter(checkbox => checkbox.checked)
+            .map(checkbox => checkbox.value);
+    
+          locationCards.forEach(card => {
+            const category = card.getAttribute('data-category');
+            const accessibility = card.getAttribute('data-accessibility').split(' ');
+    
+            // Show/hide cards based on filter selections
+            const categoryMatch = selectedCategory === 'all' || category === selectedCategory;
+            const accessibilityMatch = selectedAccessibility.every(option => accessibility.includes(option));
+    
+            if (categoryMatch && accessibilityMatch) {
+              card.style.display = 'block';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        }
+      });
+    </script>
+    
+    </body>
+    </html>
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
+      <div class="row pt-5">
+          <div class="col-lg-3 col-md-6 mb-5">
+              <a href="" class="navbar-brand">
+                  <h1 class="text-primary"><span class="text-white">LITE</span>CRAFT</h1>
+              </a>
+              <p>Map integrated website with filtering the features and to find location</p>
+              <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Follow Us</h6>
+              <div class="d-flex justify-content-start">
+                  <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                  <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                  <a class="btn btn-outline-primary btn-square" href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-5">
+              <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Our Services</h5>
+              <div class="d-flex flex-column justify-content-start">
+                  <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About</a>
+                  <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Filter facilities</a>
+                  
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-5">
+              <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Usefull Links</h5>
+              <div class="d-flex flex-column justify-content-start">
+                  <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About</a>
+                  <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>filter facicilities</a>
+                  <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Chat bot</a>
+                  <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Facilities details</a>
+              
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-5">
+              <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Contact Us</h5>
+              
+              <p><i class="fa fa-envelope mr-2"></i>litecraft@gmail.com</p>
+              <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Newsletter</h6>
+              <div class="w-100">
+                  <div class="input-group">
+                      <input type="text" class="form-control border-light" style="padding: 25px;" placeholder="Your Email">
+                      <div class="input-group-append">
+                          <button class="btn btn-primary px-3">Sign Up</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
+      <div class="row">
+          <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
+              
+          </div>
+          <div class="col-lg-6 text-center text-md-right">
+              <p class="m-0 text-white-50"> <a href="https://htmlcodex.com"></a>
+              </p>
+          </div>
+      </div>
+  </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
